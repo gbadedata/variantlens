@@ -27,7 +27,7 @@ jobs:
 
       - name: Lint with flake8
         run: |
-          flake8 src/ tests/ --max-line-length=88 --exclude=.venv
+          python -m flake8 src/ tests/ --max-line-length=88 --exclude=.venv
 
       - name: Run tests with pytest
         run: |
