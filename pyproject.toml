@@ -1,0 +1,11 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--cov=src --cov-report=term-missing"
+
+[tool.flake8]
+max-line-length = 88
+exclude = [".venv", "__pycache__"]
+
+[tool.coverage.run]
+source = ["src"]
+omit = ["src/dashboard.py"]
